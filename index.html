@@ -42,76 +42,72 @@
 
 		a:active { color: #ca4700; text-decoration: underline; }
 		
-		/*mobile-first design*/
-		.bat_head{
-			font-family: "BentonSansCond Regular", Arial, sans-serif;
-			text-align: left;
+		/*top stuff*/
+		
+		.bat_paratop{
+			max-width: 1500px;
+			margin: 0 auto;
+		}
+		
+		.bat_head {
+			position: relative;
+			color: black;
 			width: 90%;
 			margin: 0 auto;
+		}
+		
+		.bat_head h1 {
+			font-size: 4em;
+			margin: .25em 0;
+			line-height: .9em;
+			bottom: 0;
 			
 		}
 		
-		.bat_head h1{
-			width: 100%;
-			margin: 0;
-			font-size: 3em;
-		}
-		
-		.bat_head p{
-			margin: 0;
-			color: #666;
-			font-size: 28px;
-		}
-		
-		.bat_smalltext{
-			width: 80%;
-			margin: 0 auto;
+		.bat_head h3 {
+			margin: .5em 0;
+			font-size: 1.5em;
+			max-width: 800px;
 			font-style: italic;
 		}
 		
-		@media (min-width: 1200px) { /*desktop, greater than 1005px, desktop, wiffle C*/
-			
+		@media (min-width: 980px) { /*C*/
+						
 			.bat_head { 
+				width: 70%;
+				float: right;
 				position: absolute;
-				width: 100%;
-				bottom: 0;
-				text-align: center;
-				background: rgba(0,0,0,.5);
+				top: 0;
+				right: 0;
+				margin: 1em;
+				text-align: right;
+			}
+			
+			.bat_head_sub{
 				
 			}
 			
 			.bat_head h1 { 
-				font-size: 8em;
+				font-size: 7em;
+				margin: .5em 0;
 				color: white;
+				letter-spacing: .09em;
 			}
 			
-			.bat_head p{
-				color: #FF9E30;
-				margin-bottom: .5em;
+			.bat_head h3 {
+				margin: 0;
+				padding: 1em;
+				color: white;
+				background: rgba(0,0,0,.5);
+				max-width: 600px;
+				font-size: 2em;
+				font-weight: normal;
 			}
 			
-			/* Parallax CSS */
-			/* See: http://callmenick.com/2014/07/15/simple-parallax-scrolling-effect/ */
-			.bat_module.bat_parallax{
-				background-position: 50% 50%;
-				background-repeat: no-repeat;
-				background-attachment: fixed;
-				background-size: cover;
-			}
-			
-			.bat_module.bat_parallax-1 {
-				background-image: url("media/images/mar_main.jpg");
-				height: 800px;
-			}
-
-			.bat_module.content{
-				padding-bottom: 40px;
-			}
-			
-			.bat_bye{
-				display: none;
-			}
-
+		}
+		
+		@media (min-width: 980px) { /*D*/
+			.bat_head h1{ font-size: 8em; }
 		}
 		
 		/* Center story */
@@ -166,6 +162,8 @@
 			margin: 0 auto;
 		}
 		
+		h2{ max-width: 800px; }
+		
 	</style>
 	
 </head>
@@ -178,22 +176,23 @@
 	</header>
 	<!-- [END] head -->
 	
-	<div class="bat_module bat_parallax bat_parallax-1">
-		<image class="bat_bye" src="media/images/mar_main.jpg" width="100%">
-	</div>
-	
-	<!-- top image -->
 	<div class="bat_paratop">
 		<figure>
+			<img src="media/images/mar_main.jpg" width="100%">
 			<div class="bat_head">
-				<h1>Mariota madness</h1>
-				<p>A recap of Marcus Mariota's 2014 season</p>
-			</div><!-- /.bat_head -->
+				<h1>MARIOTA MAGIC</h1>
+			</div>
 		</figure>
-	</div><!-- /.bat_paratop -->
+	</div>
 	
+
+
+	
+
+
 	<!-- wrapper -->
-	<div class="bat_wrap bat_module content" style="margin-top:10px">
+	<div class="bat_wrap" style="margin-top:10px">	
+		<h2>A look back on Marcus Mariota's award-winning, record-breaking 2014 season</h2>
 		<!-- [BEGIN] byline -->
 		<div class="pure-g bat_bydate">
 			<div class="pure-u-1 pure-u-md-3-4 bat_byline">
@@ -218,7 +217,7 @@
 			<div class="mar-game">Game one</div>
 			<div>Oregon 62, South Dakota 13</div>
 			<figure>
-				<img src="media/images/pumpkin.jpg" width="100%">
+				<img src="media/images/mar_main.jpg" width="100%">
 				<figcaption>Stuff n stuff. (Someone/TRG)</figcaption>
 			</figure>			
 			<div>Game stats:</div>
@@ -230,7 +229,7 @@
 			
 			<div class="mar-game">Game two</div>
 			<div>Oregon 62, South Dakota 13</div>
-			<img src="media/images/pumpkin.jpg" width="100%">
+			<img src="media/images/mar_main.jpg" width="100%">
 			<div>Game stats:</div>
 			<ul>
 				<li>Touchdowns: 168</li>
@@ -240,7 +239,7 @@
 			
 			<div class="mar-game">Game three</div>
 			<div>Oregon 62, South Dakota 13</div>
-			<img src="media/images/pumpkin.jpg" width="100%">
+			<img src="media/images/mar_main.jpg" width="100%">
 			<div>Game stats:</div>
 			<ul>
 				<li>Touchdowns: 168</li>
@@ -250,7 +249,7 @@
 			
 			<div class="mar-game">Game four</div>
 			<div>Oregon 62, South Dakota 13</div>
-			<img src="media/images/pumpkin.jpg" width="100%">
+			<img src="media/images/mar_main.jpg" width="100%">
 			<div>Game stats:</div>
 			<ul>
 				<li>Touchdowns: 168</li>
