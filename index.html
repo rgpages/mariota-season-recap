@@ -45,7 +45,7 @@
 		/*top stuff*/
 		
 		.bat_paratop{
-			max-width: 1500px;
+			/*max-width: 1500px;*/
 			margin: 0 auto;
 		}
 		
@@ -57,19 +57,23 @@
 		}
 		
 		.bat_head h1 {
+			font-family: "MillerHeadline Bold", Times, serif;
+			letter-spacing: .01em;
 			font-size: 4em;
-			margin: .25em 0;
+			margin: .2em 0 0 0;
 			line-height: .9em;
 			bottom: 0;
 			
 		}
 		
 		.bat_head h3 {
-			margin: .5em 0;
+			margin: .3em 0;
 			font-size: 1.5em;
 			max-width: 800px;
 			font-style: italic;
 		}
+		
+		hr{ margin: 1em; }
 		
 		@media (min-width: 980px) { /*C*/
 						
@@ -83,15 +87,10 @@
 				text-align: right;
 			}
 			
-			.bat_head_sub{
-				
-			}
-			
 			.bat_head h1 { 
-				font-size: 7em;
-				margin: .5em 0;
+				font-size: 8em;
 				color: white;
-				letter-spacing: .05em;
+				letter-spacing: .01em;
 			}
 			
 			.bat_head h3 {
@@ -104,55 +103,19 @@
 				font-weight: normal;
 			}
 			
+			hr{ margin: 3em 12em; }
+			
 		}
 		
 		@media (min-width: 1280px) { /*d*/
 		
 			.bat_head h1{
-				font-size: 9em;
+				font-size: 11em;
 			}
 		
 		}
 		/* Center story */
 		.bat_story{width:100%;max-width:800px;margin:0 auto;}
-		
-		/* DataTables array */
-		#arrayzzz{
-			text-align: center;
-			font-family: Arial, sans-serif;
-		}
-		#arrayzzz_filter{
-			float: none;
-		}
-		#arrayzzz_filter label input{
-			width: 100%;
-			margin: 0;
-		}
-		
-		#arrayzzz_wrapper td.control:before{
-			left: 0;
-			height: auto;
-			width: 100%;
-			margin: 0;
-			position: relative;
-			color: black;
-			border: none;
-			line-height: auto;
-			box-shadow: none;
-			content: 'Expand';
-			background-color: rgba(0,0,0,0);
-			text-decoration: underline;
-		}
-		
-		#arrayzzz_wrapper .child li{
-			text-align: left;
-			max-width: 600px;
-			margin: 0 auto;
-		}
-		
-		table.dataTable.no-footer{
-			border-bottom: 1px solid #dddddd;
-		}
 		
 		.mar-game{
 			font-family:"BentonSansCond Regular", Arial, sans-serif;
@@ -160,6 +123,10 @@
 			letter-spacing: .01em;
 			text-transform: uppercase;
 			margin: .5em 0 0 0;
+			background: #ddd;
+			padding: .25em;
+			line-height: 1em;
+			margin-bottom: 10px;
 		}
 		ul{
 			margin: 0 auto;
@@ -171,11 +138,30 @@
 			text-align: center;
 			font-family: "BentonSansCond Regular", Arial, sans-serif;
 			font-size: 1em;
-			background: #eee;
+			background: #ddd;
 			color: #333;
-			margin: 1em;
+			margin: 1em 0 0 0;
 			padding: .5em;
 			font-variant: small-caps;
+		}
+		
+		.mar_bar{
+			text-align: center;
+			xbackground: #ddd;
+			padding: .5em 0;
+		}
+		
+		.mar_top{
+			font-family: "BentonSansCond Regular", Arial, sans-serif;
+			text-transform: uppercase;
+			font-size: 1em;
+			letter-spacing: .01em;
+		}
+		
+		.mar_bottom{
+			font-family: "MillerHeadline Bold", Times, serif;
+			font-size: 4em;
+			line-height: 1em;
 		}
 		
 	</style>
@@ -199,11 +185,6 @@
 		</figure>
 	</div>
 	
-
-
-	
-
-
 	<!-- wrapper -->
 	<div class="bat_wrap" style="margin-top:10px">	
 		<h2>A look back on Marcus Mariota's award-winning, record-breaking 2014 season</h2>
@@ -218,11 +199,11 @@
 		</div><!-- /.pure-g /.bat_bydate -->
 		<!-- [END] byline -->
 		
-		<div class="bat_story">
+		<!-- <div class="bat_story">
 			<div class="bat_sponsor">
 				Mariota special section sponsored by <a href="http://registerguard.com">The Register-Guard</a>.
 			</div>
-		</div>
+		</div> -->
 		
 		<!-- [BEGIN] Addthis social buttons -->
 		<div class="addthis_sharing_toolbox"></div>
@@ -234,54 +215,69 @@
 			<p>October is the month every year in which adults can act like children and happily get away with it thanks to the steady march toward that perennial holiday favorite, Halloween.</p>
 			<p>October is the month every year in which adults can act like children and happily get away with it thanks to the steady march toward that perennial holiday favorite, Halloween.</p>
 			
-			<div class="mar-game">Game one</div>
-			<div>Oregon 62, South Dakota 13</div>
-			<figure>
-				<img src="media/images/mar_main.jpg" width="100%">
-				<figcaption>Stuff n stuff. (Someone/TRG)</figcaption>
-			</figure>
-			<div>Touchdowns:</div>
-			<div class="td_bar" style="float:left;width:100%;background:#ddd;">
-				<div class="td_before" style="float:left;width:23%;">&nbsp;</div>
-				<div class="td_current" style="float:left;width:5%;background:#009933;text-align:center;">3</div>
+			<div class="mar-game">Oregon 62, South Dakota 13</div>
+			<div class="mar_bar pure-g" style="text-align:center;">
+				<div class="pure-u-1 pure-u-md-1-3">
+					<div class="mar_top">Touchdowns</div>
+					<div class="mar_bottom">5</div>
+				</div>
+				<div class="pure-u-1 pure-u-md-1-3">
+					<div class="mar_top">Interceptions</div>
+					<div class="mar_bottom">0</div>
+				</div>
+				<div class="pure-u-1 pure-u-md-1-3">
+					<div class="mar_top">Quarterback rating</div>
+					<div class="mar_bottom">198.5</div>
+				</div>
 			</div>
-			<div></div>
-			<div>Game stats:</div>
-			<ul>
-				<li>Touchdowns: 168</li>
-				<li>Interceptions: 123</li>
-				<li>QB rating: 900</li>
-			</ul>
+			<figure>
+				<img src="media/mariota_season_recap/mariota_game_01.jpg" width="100%">
+				<figcaption>Marcus Mariota hurdles OSU safety Justin Strong on a run during Oregon's victory over the Beavers in the Civil War. (Brian Davies/The Register-Guard)</figcaption>
+			</figure>
 			
-			<div class="mar-game">Game two</div>
-			<div>Oregon 62, South Dakota 13</div>
-			<img src="media/images/mar_main.jpg" width="100%">
-			<div>Game stats:</div>
-			<ul>
-				<li>Touchdowns: 168</li>
-				<li>Interceptions: 123</li>
-				<li>QB rating: 900</li>
-			</ul>
+			<hr>
 			
-			<div class="mar-game">Game three</div>
-			<div>Oregon 62, South Dakota 13</div>
-			<img src="media/images/mar_main.jpg" width="100%">
-			<div>Game stats:</div>
-			<ul>
-				<li>Touchdowns: 168</li>
-				<li>Interceptions: 123</li>
-				<li>QB rating: 900</li>
-			</ul>
+			<div class="mar-game">Oregon 62, Michigan State 13</div>
+			<div class="mar_bar pure-g" style="text-align:center;">
+				<div class="pure-u-1 pure-u-md-1-3">
+					<div class="mar_top">Touchdowns</div>
+					<div class="mar_bottom">3</div>
+				</div>
+				<div class="pure-u-1 pure-u-md-1-3">
+					<div class="mar_top">Interceptions</div>
+					<div class="mar_bottom">0</div>
+				</div>
+				<div class="pure-u-1 pure-u-md-1-3">
+					<div class="mar_top">Quarterback rating</div>
+					<div class="mar_bottom">160.8</div>
+				</div>
+			</div>
+			<figure>
+				<img src="media/mariota_season_recap/mariota_game_02.jpg" width="100%">
+				<figcaption>Marcus Mariota hurdles OSU safety Justin Strong on a run during Oregon's victory over the Beavers in the Civil War. (Brian Davies/The Register-Guard)</figcaption>
+			</figure>
 			
-			<div class="mar-game">Game four</div>
-			<div>Oregon 62, South Dakota 13</div>
-			<img src="media/images/mar_main.jpg" width="100%">
-			<div>Game stats:</div>
-			<ul>
-				<li>Touchdowns: 168</li>
-				<li>Interceptions: 123</li>
-				<li>QB rating: 900</li>
-			</ul>
+			<hr>
+			
+			<div class="mar-game">Oregon 62, South Dakota 13</div>
+			<div class="mar_bar pure-g" style="text-align:center;">
+				<div class="pure-u-1 pure-u-md-1-3">
+					<div class="mar_top">Touchdowns</div>
+					<div class="mar_bottom">5</div>
+				</div>
+				<div class="pure-u-1 pure-u-md-1-3">
+					<div class="mar_top">Interceptions</div>
+					<div class="mar_bottom">0</div>
+				</div>
+				<div class="pure-u-1 pure-u-md-1-3">
+					<div class="mar_top">Quarterback rating</div>
+					<div class="mar_bottom">198.5</div>
+				</div>
+			</div>
+			<figure>
+				<img src="media/mariota_season_recap/mariota_game_01.jpg" width="100%">
+				<figcaption>Marcus Mariota hurdles OSU safety Justin Strong on a run during Oregon's victory over the Beavers in the Civil War. (Brian Davies/The Register-Guard)</figcaption>
+			</figure>
 			
 		</div> <!-- /.bat_story -->
 	</div><!-- /.bat_wrap -->
