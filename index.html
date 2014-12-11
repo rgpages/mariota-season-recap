@@ -240,7 +240,7 @@
 		<figure>
 			<img src="media/images/mar_main.jpg" width="100%">
 			
-			<div class="bat_head">
+			<div id="bat_one" class="bat_head">
 				
 				<h1>TROPHY DASH</h1>
 				<div class="bat_superhead">
@@ -249,6 +249,13 @@
 			</div>
 			<figcaption>Oregon quarterback Marcus Mariota strikes the pose and hurdles Oregon State safety Justin Strong during the Ducks’ 47-19 victory over the Beavers in the 118th Civil War on Saturday, Nov. 29, at Reser Stadium in Corvallis. (Brian Davies/The Register-Guard)</figcaption>
 		</figure>
+	</div>
+	
+	<div id="bat_two" class="bat_head" style="display:none">
+		<h1>TROPHY DASH</h1>
+		<div class="bat_superhead">
+			<h3>Marcus Mariota, game-by-game</h3>
+		</div>
 	</div>
 	
 	<!-- wrapper -->
@@ -418,9 +425,9 @@
 				</div>
 			</div>
 			
-			<div class="mar_game_bar">
+<!-- 			<div class="mar_game_bar">
 				<div class="mar_game_count" style="float:left;background:black;color:white;">&nbsp;&nbsp;&nbsp;</div>
-				<div style="float:left;" class="mar_game_score">Mariota special section related stories</div>
+				<div style="float:left;" class="mar_game_score">Heisman preview: Trophy case related links</div>
 			</div>
 			<div class="pure-g" style="clear:both;width:100%;">
 				<div class="pure-u-1 pure-u-md-1-2">
@@ -447,9 +454,7 @@
 						<li><a href="">test</a></li>
 					</ul>
 				</div>
-			</div>
-			
-			<hr>
+			</div> -->
 			
 		</div> <!-- /.bat_story -->
 	</div><!-- /.bat_wrap -->
@@ -474,17 +479,19 @@
 	<!-- custom goodness -->
 	<script>
 		// Make the looping video an image on iOS devices so that the play button doesn't show over any possible text
-		var device = navigator.userAgent.toLowerCase();
-		var ios = device.match(/(iphone|ipod|ipad)/);
-		var video = $('video');
-		var img = video.children("img");
-		if (ios) {
-			$(video).replaceWith(img);
-		}
+		// var device = navigator.userAgent.toLowerCase();
+		// var ios = device.match(/(iphone|ipod|ipad)/);
+		// var video = $('video');
+		// var img = video.children("img");
+		// if (ios) {
+		// 	$(video).replaceWith(img);
+		// }
 		
 		// break byline to two lines so that "| The Register-Guard" doesn't break with multiple authors
-		if ($(window).width() <= 1005){
+		if ($(window).width() <= 980){
 			$(".bat_break").replaceWith("<br>");
+			$("#bat_one").css("display", "none");
+			$("#bat_two").css("display", "block");
 		}
 		
 		// smooth scrolling on an in-page link
